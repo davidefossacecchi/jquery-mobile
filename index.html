@@ -37,6 +37,20 @@
         <li><a href="#panel">Panel</a></li>
         <li><a href="#page4">Grid</a></li>
       </ul>
+      <!--TEXT POPUP-->
+      <a href="#textPopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-mini" data-transition="pop">Text Popup</a>
+      <div data-role="popup" id="textPopup">
+        <p>A popup with simple text</p>
+      </div>
+      <!--END TEXT POPUP-->
+      <!--IMAGE POPUP-->
+      <center><a href="#sampleImage" data-rel="popup" data-position-to="window" data-transition="fade">
+        <img src="images/mountain.jpeg" class="popphoto" style="width: 30%;"/>
+      </a></center>
+      <div data-role="popup" id="sampleImage" data-overlay-theme="b" data-theme="b" data-corners="false">
+        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/mountain.jpeg" style="max-height:512px;" alt="Paris, France">
+      </div>
+      <!--END IMAGE POPUP-->
     </div>
     <div data-role="panel" id="panel" data-display="push" data-position="right">
       <p>Panel Content</p>
