@@ -9,10 +9,36 @@
     <title>jQuery Mobile Course</title> 
   </head>
   <body>
-   <div data-role="page" id="page" data-theme="b">
+    <div data-role="page" id="page" data-theme="b">
     <div data-role="header">
       <h1>Title</h1>
-      <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+      <a href="#page" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+      <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-mini ui-icon-gear ui-btn-icon-right">Settings</a>
+    </div>
+    <div data-role="content">
+      <ul data-role="listview" data-inset="true" data-filter="true" data-autodividers="true">
+        <li data-role="list-divider">Section 1</li>
+        <li>
+          <a href="#page2">
+            <h2>Buttons Exercitation</h2><span class="ui-li-count">14</span>
+            <p>A gallery of some buttons configurations</p>
+          </a>
+        </li>
+        <li>Coming soon</li>
+        <li>Coming soon</li>
+      </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4><div data-role="controlgroup" data-type="horizontal" class="ui-btn-left ui-mini">
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right">Settings</a>
+      </div></h4>
+    </div>
+   </div>
+   <div data-role="page" id="page2" data-theme="b">
+    <div data-role="header">
+      <h1>Title</h1>
+      <a href="#page" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
       <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-mini ui-icon-gear ui-btn-icon-right">Settings</a>
     </div>
     <div data-role="content">
@@ -31,7 +57,7 @@
     </div>
     <div data-role="footer" data-position="fixed">
       <h4><div data-role="controlgroup" data-type="horizontal" class="ui-btn-left ui-mini">
-        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+        <a href="#page" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
         <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right">Settings</a>
       </div></h4>
     </div>
