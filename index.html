@@ -7,8 +7,17 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
     <title>jQuery Mobile Course</title> 
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#page").on("swipeleft", function(event, ui){
+          $("#panel").panel("open");
+        });
+      });
+    </script>
   </head>
   <body>
+
+    <!--PAGE 1: LISTVIEW -->
     <div data-role="page" id="page" data-theme="b">
     <div data-role="header">
       <h1>Title</h1>
@@ -24,9 +33,12 @@
             <p>A gallery of some buttons configurations</p>
           </a>
         </li>
-        <li>Coming soon</li>
-        <li>Coming soon</li>
+        <li><a href="#page3">Collapsible</a></li>
+        <li><a href="#panel">Panel</a></li>
       </ul>
+    </div>
+    <div data-role="panel" id="panel" data-display="push" data-position="right">
+      <p>Panel Content</p>
     </div>
     <div data-role="footer" data-position="fixed">
       <h4><div data-role="controlgroup" data-type="horizontal" class="ui-btn-left ui-mini">
@@ -35,6 +47,8 @@
       </div></h4>
     </div>
    </div>
+
+   <!--PAGE 2: BUTTONS-->
    <div data-role="page" id="page2" data-theme="b">
     <div data-role="header">
       <h1>Title</h1>
@@ -62,6 +76,26 @@
       </div></h4>
     </div>
    </div>
-    
+
+    <!--PAGE 3: COLLAPSIBLE -->
+    <div data-role="page" id="page3" data-theme="b">
+    <div data-role="header">
+      <h1>Title</h1>
+      <a href="#page" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+      <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-mini ui-icon-gear ui-btn-icon-right">Settings</a>
+    </div>
+    <div data-role="content">
+      <div data-role="collapsible" data-collapsed-icon="carat-d" data-expanded-icon="carat-u">
+        <h3>Heading</h3>
+        <p>Some awesome text</p>
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4><div data-role="controlgroup" data-type="horizontal" class="ui-btn-left ui-mini">
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right">Settings</a>
+      </div></h4>
+    </div>
+   </div>
   </body>
 </html>
