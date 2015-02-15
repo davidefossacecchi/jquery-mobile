@@ -36,13 +36,16 @@
         <li><a href="#page3">Collapsible</a></li>
         <li><a href="#panel">Panel</a></li>
         <li><a href="#page4">Grid</a></li>
+        <li><a href="#page5">Tabs</a></li>
       </ul>
+
       <!--TEXT POPUP-->
       <a href="#textPopup" data-rel="popup" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-mini" data-transition="pop">Text Popup</a>
       <div data-role="popup" id="textPopup">
         <p>A popup with simple text</p>
       </div>
       <!--END TEXT POPUP-->
+
       <!--IMAGE POPUP-->
       <center><a href="#sampleImage" data-rel="popup" data-position-to="window" data-transition="fade">
         <img src="images/mountain.jpeg" class="popphoto" style="width: 30%;"/>
@@ -51,6 +54,7 @@
         <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="images/mountain.jpeg" style="max-height:512px;" alt="Paris, France">
       </div>
       <!--END IMAGE POPUP-->
+
     </div>
     <div data-role="panel" id="panel" data-display="push" data-position="right">
       <p>Panel Content</p>
@@ -113,7 +117,7 @@
     </div>
    </div>
 
-   <!--PAGE 4: COLLAPSIBLE -->
+   <!--PAGE 4: GRID -->
     <div data-role="page" id="page4" data-theme="b">
     <div data-role="header">
       <h1>Title</h1>
@@ -124,6 +128,44 @@
       <div class="ui-grid-a">
         <div class="ui-block-a"><div class="ui-bar ui-bar-a">Sample Text 1</div></div>
         <div class="ui-block-b"><div class="ui-bar ui-bar-a">Sample Text 2</div></div>
+      </div>
+    </div>
+    <div data-role="footer" data-position="fixed">
+      <h4><div data-role="controlgroup" data-type="horizontal" class="ui-btn-left ui-mini">
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left">Home</a>
+        <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-gear ui-btn-icon-right">Settings</a>
+      </div></h4>
+    </div>
+   </div>
+
+   <!--PAGE 5: TABS-->
+    <div data-role="page" id="page5" data-theme="b">
+    <div data-role="header">
+      <h1>Title</h1>
+      <a href="#page" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-icon-home ui-btn-icon-left ui-btn-icon-notext">Home</a>
+      <a href="#" class="ui-btn-inline ui-btn ui-corner-all ui-shadow ui-mini ui-icon-gear ui-btn-icon-right">Settings</a>
+    </div>
+    <div data-role="content">
+      <div data-role="tabs" id="tabs">
+        <!--tabs header-->
+        <div data-role="navbar">
+          <ul>
+            <li><a href="#one" data-ajax="false">One</a></li>
+            <li><a href="#two" data-ajax="false">Two</a></li>
+            <li><a href="#three" data-ajax="false">Three</a></li>
+          </ul>
+        </div>
+
+        <!--tabs content-->
+        <div id="one" class="ui-body-d ui-content">
+          Content of the tab one
+        </div>
+        <div id="two" class="ui-body-d ui-content">
+          Content of the tab two
+        </div>
+        <div id="three" class="ui-body-d ui-content">
+          Content of the tab three
+        </div>
       </div>
     </div>
     <div data-role="footer" data-position="fixed">
